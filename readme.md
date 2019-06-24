@@ -11,3 +11,5 @@
 * **DynamicTimeWarpingLoop**：动态时间归整（Dynamic Time Warping，DTW）算法的循环实现
 * **FréchetDistanceRecursive**：弗雷歇离散距离（Fréchet Distance）算法的递归实现
 * **FréchetDistanceLoop**：弗雷歇离散距离（Fréchet Distance）算法的循环实现
+* **LongestCommonSubsequenceRecursive**：最长公共子序列（LCSS）算法的递归实现
+* **LongestCommonSubsequenceLoop**：最长公共子序列（LCSS）算法的循环实现
