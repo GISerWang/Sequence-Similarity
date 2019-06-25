@@ -19,7 +19,9 @@ def _frechet(disMat,costMatrix,i,j):
         costMatrix[i][j] = max(_frechet(disMat,costMatrix, 0, j - 1), disMat[0][j])
     # 计算其他值
     if i > 0 and j > 0:
-        costMatrix[i][j] = max(min(_frechet(disMat,costMatrix, i - 1, j), _frechet(disMat,costMatrix, i - 1, j - 1), _frechet(disMat,costMatrix, i, j - 1)),
+        costMatrix[i][j] = max(min(_frechet(disMat,costMatrix, i - 1, j),
+                                   _frechet(disMat,costMatrix, i - 1, j - 1),
+                                   _frechet(disMat,costMatrix, i, j - 1)),
                               disMat[i][j])
     return costMatrix[i][j]
 def FrechetDistance(ptSetA, ptSetB):
