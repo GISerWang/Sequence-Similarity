@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 from scipy.spatial.distance import cdist
+# 使用递归的方式求解cstMatrix的i,j的数值
+# 即cstMatrix右下角的最后一个值为Frechet距离
 def _recursive(disMat,cstMatrix,i,j):
     # 如果cstMatrix[i][j]不等于-1，直接返回，不需要计算了（借助动态规划的思想）
     if cstMatrix[i][j] > -1:
