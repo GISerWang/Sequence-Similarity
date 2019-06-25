@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 from scipy.spatial.distance import cdist
+import time
 # 计算单向的Hausdorff距离
 # max（a∈ptSetA）min（b∈ptSetB）‖a-b‖
 def OneWayHausdorffDistance(ptSetA, ptSetB):
@@ -24,6 +25,9 @@ def HausdorffDistance(ptSetA, ptSetB):
 data = np.loadtxt("./data/traj.csv",delimiter=",")
 # 加载三条轨迹
 traj1, traj2, traj3 = data[:8], data[8:15], data[15:]
+starttime = time.clock()
 print("轨迹1与轨迹2的Hausdorff距离为：%s"%(HausdorffDistance(traj1,traj2)))
 print("轨迹2与轨迹3的Hausdorff距离为：%s"%(HausdorffDistance(traj2,traj3)))
 print("轨迹1与轨迹3的Hausdorff距离为：%s"%(HausdorffDistance(traj1,traj3)))
+endtime = time.clock()
+print("运行时间：%s秒"%(endtime - starttime,))
