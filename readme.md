@@ -7,6 +7,8 @@
 ### 1.2 项目说明
 
 * **data**：存放测试数据的文件夹
+    * **traj**:存放三条轨迹数据（1-8行是第一条轨迹，9-15行是第二条轨迹，16-21是第三条轨迹）
+* **ShowTrajData**：使用matplotlib直观的显示三条轨迹的形状
 * **DynamicTimeWarpingRecursive**：动态时间归整（Dynamic Time Warping，DTW）算法的递归实现
 * **DynamicTimeWarpingLoop**：动态时间归整（Dynamic Time Warping，DTW）算法的循环实现
 * **FréchetDistanceRecursive**：弗雷歇离散距离（Fréchet Distance）算法的递归实现
