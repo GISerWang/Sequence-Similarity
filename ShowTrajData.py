@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
-import time
 import numpy as np
 data = np.loadtxt("./data/traj.csv",delimiter=",")
 # 加载第一条轨迹
