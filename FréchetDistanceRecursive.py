@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 from scipy.spatial.distance import cdist
+import time
 # 使用递归的方式求解cstMatrix的i,j的数值
 # 即cstMatrix右下角的最后一个值为Frechet距离
 def _frechet(disMat,costMatrix,i,j):
@@ -35,6 +36,9 @@ def FrechetDistance(ptSetA, ptSetB):
 data = np.loadtxt("./data/traj.csv",delimiter=",")
 # 加载三条轨迹
 traj1, traj2, traj3 = data[:8], data[8:15], data[15:]
+starttime = time.clock()
 print("轨迹1与轨迹2的Frechet距离为：%s"%(FrechetDistance(traj1,traj2)))
 print("轨迹2与轨迹3的Frechet距离为：%s"%(FrechetDistance(traj2,traj3)))
 print("轨迹1与轨迹3的Frechet距离为：%s"%(FrechetDistance(traj1,traj3)))
+endtime = time.clock()
+print("运行时间：%s秒"%(endtime - starttime,))
