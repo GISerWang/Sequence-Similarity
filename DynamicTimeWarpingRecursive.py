@@ -80,4 +80,4 @@ print("轨迹1与轨迹2的DTW距离为：%s"%(DynamicTimeWarping(traj1,traj2)[0
 print("轨迹2与轨迹3的DTW距离为：%s"%(DynamicTimeWarping(traj2,traj3)[0]))
 print("轨迹1与轨迹3的DTW距离为：%s"%(DynamicTimeWarping(traj1,traj3)[0]))
 endtime = time.clock()
-print(endtime - starttime)
+print("运行时间：%s秒"%(endtime - starttime,))
