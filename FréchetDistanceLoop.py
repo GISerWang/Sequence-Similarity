@@ -2,6 +2,8 @@
 import numpy as np
 from scipy.spatial.distance import cdist
 import time
+# 使用循环的方式求解两个序列点对的相似度（距离）
+# 即costMatrix右下角的最后一个值为Frechet距离
 def FrechetDistance(ptSetA, ptSetB):
     # 获得点集ptSetA中点的个数n
     n = ptSetA.shape[0]
