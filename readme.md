@@ -14,7 +14,9 @@
 * **FréchetDistanceRecursive**：弗雷歇离散距离（Fréchet Distance）算法的递归实现
 * **FréchetDistanceLoop**：弗雷歇离散距离（Fréchet Distance）算法的循环实现
 * **HausdorffDistance**：豪斯多夫距离（Hausdorff Distance）算法的实现
-* **LongestCommonSubsequenceRecursive**：最长公共子序列（LCSS）算法的递归实现
-* **LongestCommonSubsequenceLoop**：最长公共子序列（LCSS）算法的循环实现
+* **LongestCommonSubsequenceRecursive**：最长公共子序列（Longest Common Subsequence）算法的递归实现
+* **LongestCommonSubsequenceLoop**：最长公共子序列（Longest Common Subsequence）算法的循环实现
+* **LongestCommonSubstringRecursive**：最长公共子串（Longest Common Substring）算法的递归实现
+* **LongestCommonSubstringLoop**：最长公共子串（Longest Common Substring）算法的循环实现
 * **EditDistance**：编辑距离（EditDistance）（未完成）
 ## 2 序列相似度算法原理
