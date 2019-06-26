@@ -23,19 +23,16 @@ def extractPath(costMatrix,i,j):
         i = minIndex[0]
         j = minIndex[1]
     # 寻找靠边的点
-    if i != 0 and j == 0:
-        while i != 0:
-            path.insert(0, (i, 0))
-            i = i-1
+    while i != 0:
+        path.insert(0, (i, 0))
+        i = i-1
     # 寻找靠边的点
-    if i == 0 and j != 0:
-        while j != 0:
-            path.insert(0, (0, j))
-            j = j - 1
+    while j != 0:
+        path.insert(0, (0, j))
+        j = j - 1
     # 加入0，0
-    if i == 0 and j == 0:
-        path.insert(0, (0, 0))
-        return path
+    path.insert(0, (0, 0))
+    return path
 # 使用递归的方式求解cstMatrix的i,j的数值
 # 即cstMatrix右下角的最后一个值为dtw距离
 # 返回值：dtw值+路径
@@ -77,7 +74,10 @@ data = np.loadtxt("./data/traj.csv",delimiter=",")
 traj1, traj2, traj3 = data[:8], data[8:15], data[15:]
 starttime = time.clock()
 print("轨迹1与轨迹2的DTW距离为：%s"%(DynamicTimeWarping(traj1,traj2)[0]))
+print("轨迹1与轨迹2的path路径为：%s"%(DynamicTimeWarping(traj1,traj2)[1]))
 print("轨迹2与轨迹3的DTW距离为：%s"%(DynamicTimeWarping(traj2,traj3)[0]))
+print("轨迹2与轨迹3的path路径为：%s"%(DynamicTimeWarping(traj2,traj3)[1]))
 print("轨迹1与轨迹3的DTW距离为：%s"%(DynamicTimeWarping(traj1,traj3)[0]))
+print("轨迹1与轨迹3的path路径为：%s"%(DynamicTimeWarping(traj1,traj3)[1]))
 endtime = time.clock()
 print("运行时间：%s秒"%(endtime - starttime,))
