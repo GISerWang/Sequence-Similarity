@@ -16,3 +16,4 @@
 * **HausdorffDistance**：豪斯多夫距离（Hausdorff Distance）算法的实现
 * **LongestCommonSubsequenceRecursive**：最长公共子序列（LCSS）算法的递归实现
 * **LongestCommonSubsequenceLoop**：最长公共子序列（LCSS）算法的循环实现
+* **EditDistance**：编辑距离（EditDistance）（未完成）
