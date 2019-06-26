@@ -33,11 +33,11 @@ def extractPath(costMatrix,i,j):
     # 加入0，0
     path.insert(0, (0, 0))
     return path
-# 使用递归的方式求解cstMatrix的i,j的数值
-# 即cstMatrix右下角的最后一个值为dtw距离
+# 使用递归的方式求解costMatrix的i,j的数值
+# 即costMatrix右下角的最后一个值为dtw距离
 # 返回值：dtw值+路径
 def _dtw(disMat,costMatrix,i,j):
-    # 如果cstMatrix[i][j]不等于-1，直接返回，不需要计算了（借助动态规划的思想）
+    # 如果costMatrix[i][j]不等于-1，直接返回，不需要计算了（借助动态规划的思想）
     if costMatrix[i][j] > -1:
         return costMatrix[i][j]
     # 当i,j都等于0的时候，计算消耗矩阵的值
