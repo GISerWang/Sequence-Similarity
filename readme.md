@@ -16,5 +16,6 @@
 * **HausdorffDistance**：豪斯多夫距离（Hausdorff Distance）算法的实现
 * **LongestCommonSubsequenceRecursive**：最长公共子序列（Longest Common Subsequence）算法的递归实现
 * **LongestCommonSubsequenceLoop**：最长公共子序列（Longest Common Subsequence）算法的循环实现
+* **LongestCommonSubsequenceLoopOptimize**：最长公共子序列（Longest Common Subsequence）算法的循环实现,代码进行了优化，速度为**LongestCommonSubsequenceLoop**的**三分之一**
 * **EditDistance**：编辑距离（EditDistance）（未完成）
 ## 2 序列相似度算法原理
